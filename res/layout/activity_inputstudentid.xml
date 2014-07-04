@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F4F4"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:text="Input Student ID"
+        android:textSize="28sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#CCCCCC" />
+
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_gravity="center"
+         >
+
+        <TextView
+            android:id="@+id/cidTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="Class ID"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/classIDspinner"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/cidTV"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="-10dp"
+            android:layout_toRightOf="@id/cidTV" />
+
+        <TextView
+            android:id="@+id/sidTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/cidTV"
+            android:layout_below="@id/classIDspinner"
+            android:layout_marginTop="20dp"
+            android:text="Student ID"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/studentIDspinner"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/classIDspinner"
+            android:layout_alignTop="@id/sidTV"
+            android:layout_below="@id/classIDspinner"
+            android:layout_marginTop="-10dp" />
+
+        <TextView
+            android:id="@+id/orTV"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/studentIDspinner"
+            android:layout_marginTop="10dp"
+            android:text="OR"
+            android:textSize="18sp" />
+	    
+    </RelativeLayout>
+
+    <Button
+	        android:id="@+id/scanQRbutton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_margin="10dp"
+	        android:textSize="12sp"
+	        android:text="Scan QR Code" />
+
+    <Button
+        android:id="@+id/gobutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="15dp"
+        android:text="Go" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="#CCCCCC" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp" >
+
+        <Button
+            android:id="@+id/classlistbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Class List" />
+
+        <Button
+            android:id="@+id/studentlistbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Student List" />
+    </RelativeLayout>
+
+</LinearLayout>

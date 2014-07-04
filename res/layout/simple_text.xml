@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+      <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:background="#fff" >
+
+          <ImageView
+              android:id="@+id/people_icon"
+              android:layout_width="80dp"
+              android:layout_height="80dip"
+              android:layout_alignParentTop="true"
+              android:contentDescription="icon"
+              android:scaleType="fitXY"
+              android:src="@drawable/icon"
+              />
+
+          <TextView
+              android:id="@+id/class_lecture_id"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="15dp"
+              android:layout_alignTop="@id/people_icon"
+              android:layout_toRightOf="@+id/people_icon"
+              android:text="Lesson 1"
+              android:textAppearance="?android:attr/textAppearanceMedium"
+              android:textColor="#585A5C" />
+          
+ 		<TextView
+              android:id="@+id/lectureNote"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/class_lecture_id"
+              android:layout_below="@id/class_lecture_id"
+              android:text="中国书法课"
+              android:textSize="12sp"
+              android:textColor="#828282" />
+
+          <TextView
+              android:id="@+id/comment"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/lectureNote"
+              android:paddingTop="2dp"
+              android:paddingBottom="4dp"
+              android:layout_alignLeft="@+id/class_lecture_id"
+              android:text="Comment for student"
+			  android:textSize="13sp"              
+              android:textColor="#828282" />
+
+          <TextView
+              android:id="@+id/coach_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignLeft="@+id/class_lecture_id"
+              android:layout_alignBottom="@id/people_icon"
+              android:text="Post by "
+              android:gravity="bottom"
+              android:textColor="#828282" />
+
+          <TextView
+              android:id="@+id/post_date"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_alignTop="@id/coach_name"
+              android:layout_alignBottom="@id/coach_name"
+              android:layout_toRightOf="@+id/coach_name"
+              android:text="@string/post_date"
+               />
+
+          <TextView
+              android:id="@+id/gradeTV"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignParentRight="true"
+              android:layout_marginRight="20dp"
+              android:layout_centerVertical="true"
+              android:text="A+"
+              android:textSize="20sp" />
+
+      </RelativeLayout>
+

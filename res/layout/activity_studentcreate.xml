@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:text="Student"
+            android:textSize="26dp" />
+
+        <Button
+            android:id="@+id/addStudentButton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/roundedbutton"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Add Student"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/studentID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/tv1"
+            android:layout_below="@id/tv1"
+            android:layout_marginTop="15dp"
+            android:text="Student ID"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/studentIDInput"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/studentID"
+            android:layout_alignTop="@id/studentID"
+            android:textSize="18sp" >
+		
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/studentID"
+            android:layout_below="@+id/studentIDInput"
+            android:layout_marginTop="15dp"
+            android:text="Name"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/nameInput"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/studentIDInput"
+			android:layout_alignTop="@+id/name"
+            
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/name"
+            android:layout_below="@+id/nameInput"
+            android:layout_marginTop="15dp"
+            android:text="Birthday"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dobInput"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/nameInput"
+            android:layout_alignTop="@id/dob"
+            android:gravity="center"
+            android:drawableRight="@drawable/calendar_bars"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/dob"
+            android:layout_below="@+id/dobInput"
+            android:layout_marginTop="15dp"
+            android:text="Address"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/addressInput"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dobInput"
+            android:layout_alignTop="@+id/address"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/photo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/address"
+            android:layout_below="@+id/addressInput"
+            android:layout_marginTop="5dp"
+            android:text="Photo"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/photoInput"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/addressInput"
+            android:layout_alignTop="@+id/photo"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/post_add_photo" />
+
+        <TextView
+            android:id="@+id/classid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/photo"
+            android:layout_below="@+id/photoInput"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="10dp"
+            android:text="Add Class ID"
+            android:textSize="16sp" />
+
+        <Spinner
+            android:id="@+id/classspinner"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_alignLeft="@+id/photoInput"
+            android:layout_alignTop="@+id/classid"
+            android:layout_marginLeft="-15dp"
+            android:layout_marginTop="-10dp" />
+
+        <ImageButton
+            android:id="@+id/addClassToStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/classid"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/classspinner"
+            android:background="#ffffff"
+            android:src="@drawable/add_icon_blue" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/classjoined"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginBottom="5dp"
+        android:text="Class Joined"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_margin="2dp"
+        android:background="@android:color/darker_gray" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:background="#F9F9F9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </ListView>
+
+</LinearLayout>

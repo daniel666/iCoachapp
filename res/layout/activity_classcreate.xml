@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3" >
+
+    <TextView
+        android:id="@+id/idTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="5dp"
+        android:text="Create Class"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/classidET"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nameTV"
+        android:layout_alignBottom="@+id/nameTV"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/nameTV"
+        android:background="@drawable/roundedtextbox"
+        android:ems="15"
+        android:padding="2dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/ageTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/nameTV"
+        android:layout_below="@+id/classidET"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="24dp"
+        android:text="Class Name"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/classnameET"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ageTV"
+        android:layout_alignBottom="@+id/ageTV"
+        android:layout_alignLeft="@+id/classidET"
+        android:background="@drawable/roundedtextbox"
+        android:ems="10"
+        android:padding="2dp" />
+
+    <TextView
+        android:id="@+id/addrTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/nameTV"
+        android:layout_below="@+id/classnameET"
+        android:layout_marginTop="28dp"
+        android:text="Start Date"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/calenderTV"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/addrTV"
+        android:layout_alignLeft="@+id/classidET"
+        android:layout_below="@id/classnameET"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/calendarbox"
+        android:drawableRight="@drawable/calendar_bars"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp" />
+
+    <TextView
+        android:id="@+id/timeTV"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classidET"
+        android:layout_below="@+id/calenderTV"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/calendarbox"
+        android:gravity="center_horizontal"
+        android:drawableRight="@drawable/clock"
+        android:drawablePadding="5dp"
+        android:padding="2dp" />
+
+    <SeekBar
+        android:id="@+id/lecturenumSB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classidET"
+        android:layout_alignRight="@+id/calenderTV"
+        android:layout_alignTop="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/nameTV"
+        android:layout_below="@id/timeTV"
+        android:gravity="right"
+        android:text="Lecture Num"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignRight="@+id/nameTV"
+        android:layout_below="@+id/lecturenumSB"
+        android:layout_marginTop="10dp"
+        android:gravity="right"
+        android:text="Desc"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/descET"
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:layout_alignLeft="@+id/classidET"
+        android:layout_alignTop="@+id/textView9"
+        android:layout_marginBottom="10dp"
+        android:gravity="top"
+        android:textSize="18sp"
+        android:background="@drawable/roundedtextbox" />
+
+    <TextView
+        android:id="@+id/studentNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/studentNumTVindicator"
+        android:layout_alignBottom="@+id/studentNumTVindicator"
+        android:layout_toRightOf="@+id/studentNumTVindicator"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/idTV"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="5dp"
+        android:text="Class ID"
+        android:textSize="18sp" />
+
+    <CheckedTextView
+        android:id="@+id/pendingCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/nameTV"
+        android:layout_below="@id/descET"
+        android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="Pending"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/studentNumTVindicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/pendingCB"
+        android:layout_alignRight="@+id/progress"
+        android:layout_alignTop="@id/pendingCB"
+        android:layout_below="@id/descET"
+        android:gravity="center"
+        android:text="# of Students :  "
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/studentNumTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/studentNumTVindicator"
+        android:layout_below="@id/descET"
+        android:layout_toRightOf="@id/studentNumTVindicator"
+        android:text="0" />
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/timeTV"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/lecturenumSB"
+        android:gravity="center"
+        android:height="30dp"
+        android:text="0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        >
+        
+        <Button
+	        android:id="@+id/addclassbutton"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="100dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:text="Add Class" />
+	
+	    <Button
+	        android:id="@+id/addstudentbutton"
+	        style="?android:attr/buttonStyleSmall"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:text="Add Student" />
+    
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/timeTV"
+        android:layout_alignRight="@+id/textView8"
+        android:textSize="16sp"
+        android:text="Class Time" />
+
+</RelativeLayout>

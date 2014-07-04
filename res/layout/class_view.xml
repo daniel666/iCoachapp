@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/classidTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:text="classid" />
+
+    <TextView
+        android:id="@+id/classdescTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/classidTV"
+        android:layout_below="@id/classidTV"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp"
+        android:textSize="16sp"
+        android:ellipsize="end"
+        android:layout_marginRight="25dp"
+        android:text="Desc" />
+
+    <TextView
+        android:id="@+id/classnameTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/classidTV"
+        android:layout_toRightOf="@+id/classidTV"
+        android:paddingLeft="10dp"
+        android:text="classname" />
+
+    <TextView
+        android:id="@+id/startdateTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/classidTV"
+        android:layout_toRightOf="@+id/classnameTV"
+        android:paddingLeft="10dp"
+        android:text="startdate" />
+
+    <ImageButton
+        android:id="@+id/expandbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/expandicon" />
+
+</RelativeLayout>

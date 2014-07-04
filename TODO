@@ -1,0 +1,5 @@
+1. sort by date current sorts by alpha, needs to implement data as DATE type instead of string.
+2. getstudentsbycoachname currently implemented as getAllstudent, need to update this. in CreateCommentActivity student autotv
+
+
+3. getclassbycoach currently use coachid stored in clase, but may need a teach relationship in future

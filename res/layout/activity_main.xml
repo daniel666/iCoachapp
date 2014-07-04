@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/actionlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="#FFF" >
+
+        <Button
+            android:id="@+id/createcommentbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/roundedbutton"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="New Comment"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/backbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/createcommentbutton"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@id/createcommentbutton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/roundedbutton"
+            android:text="Back"
+            android:textSize="12sp" />
+
+        <Spinner
+            android:id="@+id/sortspinner"
+            android:layout_width="74dp"
+            android:layout_height="32dp"
+            android:layout_alignTop="@+id/backbutton"
+            android:layout_toLeftOf="@id/backbutton" />
+
+        <TextView
+            android:id="@+id/sortbytv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/createcommentbutton"
+            android:layout_alignBottom="@+id/sortspinner"
+            android:layout_toLeftOf="@+id/sortspinner"
+            android:text="Sort By"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="90dp"
+        android:background="@drawable/bg" >
+
+        <ImageView
+            android:id="@+id/account_people_icon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/account_people_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/account_people_icon"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/account_people_icon"
+            android:text="Diamond Chan"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/account_ref_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/account_people_name"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/account_people_name"
+            android:text="Swimming I "
+            android:textColor="#000" />
+
+        <TextView
+            android:id="@+id/follower_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/account_people_icon"
+            android:layout_alignLeft="@+id/account_ref_name"
+            android:text="Coach : Lee Sin / Ms Fortune"
+            android:textColor="#000" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#fff" >
+
+        <ListView
+            android:id="@+id/listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </RelativeLayout>
+
+
+</LinearLayout>
